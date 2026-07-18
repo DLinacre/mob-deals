@@ -47,7 +47,7 @@ jobs:
                   if not label_for or label_for not in parser.ids:
                       errors.append(f'{path}: label for={label_for!r} has no matching id')
               for link in parser.links:
-                  if link.startswith(('http://','https://','mailto:','#')): continue
+                  if link.startswith(('http://','https://','mailto:','sms:','#')): continue
                   target=link.split('#',1)[0]
                   if target and not Path(target).exists():
                       errors.append(f'{path}: broken internal link {link}')
