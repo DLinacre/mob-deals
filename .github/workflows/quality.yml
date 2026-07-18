@@ -1,0 +1,62 @@
+name: Quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  static-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Validate static site essentials
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import re, sys
+
+          class LinkParser(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.links=[]; self.labels=[]; self.ids=set(); self.h1=0; self.title=False; self.desc=False; self.canonical=False; self.lang=False
+              def handle_starttag(self, tag, attrs):
+                  attrs=dict(attrs)
+                  if tag=='html' and attrs.get('lang'): self.lang=True
+                  if tag=='a' and attrs.get('href'): self.links.append(attrs.get('href'))
+                  if tag=='label': self.labels.append(attrs.get('for'))
+                  if attrs.get('id'): self.ids.add(attrs.get('id'))
+                  if tag=='h1': self.h1 += 1
+                  if tag=='title': self.title=True
+                  if tag=='meta' and attrs.get('name')=='description': self.desc=True
+                  if tag=='link' and attrs.get('rel')=='canonical': self.canonical=True
+
+          errors=[]
+          for path in Path('.').glob('*.html'):
+              html=path.read_text(encoding='utf-8')
+              parser=LinkParser(); parser.feed(html)
+              if not parser.lang: errors.append(f'{path}: missing html lang')
+              if parser.h1 != 1: errors.append(f'{path}: expected 1 h1, found {parser.h1}')
+              if not parser.title: errors.append(f'{path}: missing title')
+              if not parser.desc: errors.append(f'{path}: missing meta description')
+              if not parser.canonical: errors.append(f'{path}: missing canonical')
+              for label_for in parser.labels:
+                  if not label_for or label_for not in parser.ids:
+                      errors.append(f'{path}: label for={label_for!r} has no matching id')
+              for link in parser.links:
+                  if link.startswith(('http://','https://','mailto:','#')): continue
+                  target=link.split('#',1)[0]
+                  if target and not Path(target).exists():
+                      errors.append(f'{path}: broken internal link {link}')
+              for banned in ['cdn.tailwindcss.com','chart.js','Math.random','Scraping 10 sources','Best Price Guarantee','linacre/s70']:
+                  if banned in html:
+                      errors.append(f'{path}: banned legacy pattern {banned}')
+          for required in ['README.md','LICENSE','robots.txt','sitemap.xml','manifest.webmanifest','assets/styles.css','assets/app.js','assets/banner.svg']:
+              if not Path(required).exists(): errors.append(f'missing {required}')
+          if errors:
+              print('\n'.join(errors)); sys.exit(1)
+          print('Static quality checks passed.')
+          PY

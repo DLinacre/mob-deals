@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Live website
+    url: https://dlinacre.github.io/mob-deals/
+    about: View the deployed Mob Deals site.

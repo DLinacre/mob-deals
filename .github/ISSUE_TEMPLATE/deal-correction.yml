@@ -1,0 +1,44 @@
+name: Deal correction or cheaper deal
+about: Report a Mob Deals listing that appears outdated, wrong, or beaten by a public offer.
+title: "Deal correction: "
+labels: [deal-data, needs-review]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep Mob Deals accurate. Only submit publicly visible offers that can be checked without a private account.
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      placeholder: e.g. SMARTY, giffgaff, Talkmobile
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      placeholder: https://provider.example/deal
+    validations:
+      required: true
+  - type: input
+    id: price
+    attributes:
+      label: Visible monthly price
+      placeholder: e.g. £9/month
+    validations:
+      required: true
+  - type: input
+    id: allowance
+    attributes:
+      label: Data allowance and term
+      placeholder: e.g. 60GB, 12 months
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add roaming, fair-use, expiry, annual price rise, or other terms visible on the source page.
+    validations:
+      required: false

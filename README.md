@@ -32,6 +32,9 @@ A responsible, SEO-ready and accessibility-first comparison site for South Yorks
 
 ## Project structure
 
+The repository also includes issue templates, a security policy and a lightweight quality-check workflow so future changes preserve the current trust, accessibility and performance posture.
+
+
 ```text
 .
 ├── index.html
@@ -46,6 +49,9 @@ A responsible, SEO-ready and accessibility-first comparison site for South Yorks
 ├── sitemap.xml
 ├── manifest.webmanifest
 ├── .nojekyll
+├── LICENSE
+├── SECURITY.md
+├── CONTRIBUTING.md
 └── assets/
     ├── app.js
     ├── styles.css

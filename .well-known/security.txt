@@ -1,0 +1,4 @@
+Contact: https://github.com/DLinacre/mob-deals/issues
+Policy: https://github.com/DLinacre/mob-deals/blob/main/SECURITY.md
+Preferred-Languages: en
+Expires: 2027-07-18T00:00:00Z

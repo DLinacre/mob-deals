@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-18T16:00:00+01:00",
+  "status": "manual-comparison-data",
+  "disclaimer": "Always confirm final price, availability, roaming and terms with the provider before switching.",
+  "deals": [
+    { "id": "smarty-95gb", "provider": "SMARTY", "network": "Three", "priceMonthly": 9, "currency": "GBP", "dataAllowance": "95GB", "term": "1 month", "sourceUrl": "https://smarty.co.uk/sim-only/" },
+    { "id": "giffgaff-unlimited", "provider": "giffgaff", "network": "O2", "priceMonthly": 14, "currency": "GBP", "dataAllowance": "Unlimited", "term": "18 months", "sourceUrl": "https://www.giffgaff.com/sim-only-deals" },
+    { "id": "talkmobile-unlimited", "provider": "Talkmobile", "network": "Vodafone", "priceMonthly": 16, "currency": "GBP", "dataAllowance": "Unlimited", "term": "1 month", "sourceUrl": "https://talkmobile.co.uk/sim-only" },
+    { "id": "idmobile-unlimited", "provider": "iD Mobile", "network": "Three", "priceMonthly": 15, "currency": "GBP", "dataAllowance": "Unlimited", "term": "1 month", "sourceUrl": "https://www.idmobile.co.uk/sim-only-deals" },
+    { "id": "lebara-50gb", "provider": "Lebara", "network": "Vodafone", "priceMonthly": 9, "currency": "GBP", "dataAllowance": "50GB", "term": "1 month", "sourceUrl": "https://mobile.lebara.com/gb/en/best-sim-only-deals/c/simo-contract" },
+    { "id": "spusu-60gb", "provider": "spusu", "network": "EE", "priceMonthly": 8, "currency": "GBP", "dataAllowance": "60GB", "term": "12 months", "sourceUrl": "https://www.spusu.co.uk/" }
+  ]
+}

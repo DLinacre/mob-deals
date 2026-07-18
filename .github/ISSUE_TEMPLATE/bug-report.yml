@@ -1,0 +1,26 @@
+name: Website bug
+about: Report a bug, accessibility problem, broken link, or content issue.
+title: "Bug: "
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the issue and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      placeholder: https://dlinacre.github.io/mob-deals/
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Device/browser/assistive technology
+      placeholder: e.g. iPhone Safari, Windows Chrome, NVDA, keyboard-only
+    validations:
+      required: false
