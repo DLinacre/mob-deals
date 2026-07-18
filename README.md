@@ -1,56 +1,77 @@
-# s70
+<p align="center"><img src="assets/banner.svg" alt="Mob Deals — South Yorkshire SIM-only comparison" width="100%"></p>
 
-**Best SIM-only mobile deals in South Yorkshire.**
+# Mob Deals
 
-Clean, fast, single-file site that aggregates the cheapest verified plans from 10+ sources.
+**Transparent, accessible SIM-only mobile comparison for South Yorkshire.**
 
-## Features
-- Best price guarantee — cross-referenced from 8+ public sources
-- Real-time simulated scraping + "Fetch latest" button
-- Interactive comparison table + Chart.js
-- Savings calculator
-- South Yorkshire coverage breakdown
-- 100% static — works perfectly on GitHub Pages
+Mob Deals is a polished GitHub Pages website built to replace unsupported guarantee claims with clear methodology, provider confirmation links, accessible UI, SEO-ready metadata and fast static delivery.
 
-## Live Demo
-https://linacre.github.io/s70
+## Tags
 
-## How the "guarantee" works
-We scrape and aggregate:
-- SaveCompare
-- MyMobiles
-- CompareMyMobile
-- HotUKDeals
-- SimSherpa
-- Provider official sites (giffgaff, iD Mobile, Smarty, Lebara, 1pMobile, Talkmobile, Mozillion, spusu)
-- Reddit (r/UKFrugal, r/UKPersonalFinance)
-- MoneySuperMarket
+`github-pages` · `static-site` · `mobile-deals` · `sim-only` · `south-yorkshire` · `accessibility` · `seo` · `performance` · `wcag` · `vanilla-js`
 
-Only public, verifiable offers are listed. Fair use, contract length and network are always shown.
+## Live site
 
-If you find a cheaper **publicly advertised** deal for South Yorkshire that we missed, open an issue — we'll add it immediately.
+https://dlinacre.github.io/mob-deals/
 
-## Quick start (GitHub Pages)
+## What changed
 
-1. Fork or clone this repo
-2. Enable GitHub Pages (Settings → Pages → Source: Deploy from `main` branch / root)
-3. Done. Your site will be live at `https://yourname.github.io/s70`
+- Removed fake/random “fresh data” scraping.
+- Removed unsupported “lowest price guaranteed” claims.
+- Added transparent disclaimers and methodology.
+- Added semantic HTML, skip link, accessible labels and visible focus states.
+- Added static deal cards/table so content works without JavaScript.
+- Added Privacy, Terms, About, Contact, Methodology and Accessibility pages.
+- Added sitemap, robots file, manifest, canonical, Open Graph/Twitter metadata and JSON-LD.
+- Replaced Tailwind CDN and Chart.js with a small self-hosted CSS/JS footprint.
+- Added clean branding assets: banner and icon.
+
+## Repository about
+
+A responsible, SEO-ready and accessibility-first comparison site for South Yorkshire SIM-only mobile deals, deployed on GitHub Pages.
+
+## Project structure
+
+```text
+.
+├── index.html
+├── about.html
+├── methodology.html
+├── contact.html
+├── privacy.html
+├── terms.html
+├── accessibility.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── manifest.webmanifest
+├── .nojekyll
+└── assets/
+    ├── app.js
+    ├── styles.css
+    ├── icon.svg
+    ├── og.svg
+    └── banner.svg
+```
 
 ## Local development
-Just open `index.html` in any browser.
 
-Press `R` to trigger a fresh data fetch.
+Open `index.html` directly in a browser, or run a local static server:
 
-## Automatic updates (optional)
-Add a GitHub Action to periodically update the deals array (example workflow included in `.github/workflows` if you expand the repo).
+```bash
+python3 -m http.server 8080
+```
 
-## Tech
-- Tailwind CSS (via CDN)
-- Chart.js
-- Pure vanilla JavaScript
-- Zero backend, zero build step required
+Then visit `http://localhost:8080`.
+
+## Deployment
+
+GitHub Pages can deploy directly from the `main` branch root.
+
+## Data policy
+
+The current site uses manually maintained comparison data and provider links. It does **not** claim real-time scraping, guaranteed lowest pricing or live availability. Any future automated pipeline should store source URLs, timestamps, validation results and human approvals before publishing.
 
 ## License
-MIT — use it, improve it, share it.
 
-Built with ❤️ for South Yorkshire residents who hate overpaying for mobile.
+MIT, unless changed by the repository owner.
