@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-07-18T16:30:00+01:00",
+  "status": "provider-directory",
+  "disclaimer": "Provider directory for manual comparison and automated public source reachability checks. Inclusion does not imply endorsement or verified current price.",
+  "providers": [
+    { "id": "smarty", "name": "SMARTY", "network": "Three", "type": "MVNO", "sourceUrl": "https://smarty.co.uk/sim-only/", "notes": "SIM-only plans; confirm current allowance and promotion." },
+    { "id": "giffgaff", "name": "giffgaff", "network": "O2", "type": "MVNO", "sourceUrl": "https://www.giffgaff.com/sim-only-deals", "notes": "SIM-only and goodybag plans; confirm contract and roaming terms." },
+    { "id": "id-mobile", "name": "iD Mobile", "network": "Three", "type": "MVNO", "sourceUrl": "https://www.idmobile.co.uk/sim-only-deals", "notes": "SIM-only plans; provider may block automated checks." },
+    { "id": "talkmobile", "name": "Talkmobile", "network": "Vodafone", "type": "MVNO", "sourceUrl": "https://talkmobile.co.uk/sim-only", "notes": "SIM-only plans on Vodafone network." },
+    { "id": "lebara", "name": "Lebara", "network": "Vodafone", "type": "MVNO", "sourceUrl": "https://mobile.lebara.com/gb/en/best-sim-only-deals/c/simo-contract", "notes": "Frequent promotions; confirm introductory pricing." },
+    { "id": "spusu", "name": "spusu", "network": "EE", "type": "MVNO", "sourceUrl": "https://www.spusu.co.uk/", "notes": "SIM-only plans; confirm fair-use and roaming terms." },
+    { "id": "voxi", "name": "VOXI", "network": "Vodafone", "type": "MVNO", "sourceUrl": "https://www.voxi.co.uk/sim-only-plans", "notes": "SIM-only plans; confirm social/media pass terms." },
+    { "id": "tesco-mobile", "name": "Tesco Mobile", "network": "O2", "type": "MVNO", "sourceUrl": "https://www.tescomobile.com/shop/sim-only", "notes": "SIM-only plans; confirm Clubcard pricing conditions." },
+    { "id": "sky-mobile", "name": "Sky Mobile", "network": "O2", "type": "MVNO", "sourceUrl": "https://www.sky.com/shop/mobile/sim-only", "notes": "SIM-only plans; confirm roll/data features and terms." },
+    { "id": "asda-mobile", "name": "Asda Mobile", "network": "Vodafone", "type": "MVNO", "sourceUrl": "https://mobile.asda.com/bundles", "notes": "Bundles and SIM-only style plans; confirm current terms." },
+    { "id": "lyca-mobile", "name": "Lyca Mobile", "network": "EE", "type": "MVNO", "sourceUrl": "https://www.lycamobile.co.uk/en/bundles/sim-only-deals/", "notes": "SIM-only deals; confirm promo duration and renewal." },
+    { "id": "onep-mobile", "name": "1pMobile", "network": "EE", "type": "MVNO", "sourceUrl": "https://www.1pmobile.com/", "notes": "Plans on EE network; confirm current plan terms." },
+    { "id": "ee", "name": "EE", "network": "EE", "type": "MNO", "sourceUrl": "https://shop.ee.co.uk/sim-only", "notes": "Direct network provider plans." },
+    { "id": "o2", "name": "O2", "network": "O2", "type": "MNO", "sourceUrl": "https://www.o2.co.uk/shop/sim-cards/sim-only-deals", "notes": "Direct network provider plans." },
+    { "id": "three", "name": "Three", "network": "Three", "type": "MNO", "sourceUrl": "https://www.three.co.uk/shop/sim-only/pay-monthly", "notes": "Direct network provider plans." },
+    { "id": "vodafone", "name": "Vodafone", "network": "Vodafone", "type": "MNO", "sourceUrl": "https://www.vodafone.co.uk/mobile/best-sim-only-deals", "notes": "Direct network provider plans." },
+    { "id": "honest-mobile", "name": "Honest Mobile", "network": "Three", "type": "MVNO", "sourceUrl": "https://www.honestmobile.com/sim", "notes": "SIM-only plans; confirm coverage and pricing." },
+    { "id": "utility-warehouse", "name": "Utility Warehouse", "network": "EE", "type": "MVNO", "sourceUrl": "https://uw.co.uk/services/mobile", "notes": "Mobile service may be bundled; confirm eligibility and terms." }
+  ]
+}
