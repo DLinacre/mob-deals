@@ -54,14 +54,14 @@ jobs:
               for banned in ['cdn.tailwindcss.com','chart.js','Math.random','Scraping 10 sources','Best Price Guarantee','linacre/s70']:
                   if banned in html:
                       errors.append(f'{path}: banned legacy pattern {banned}')
-          for required in ['README.md','LICENSE','SECURITY.md','CONTRIBUTING.md','robots.txt','sitemap.xml','manifest.webmanifest','assets/styles.css','assets/app.js','assets/banner.svg','data/deals.json','data/providers.json','data/live-sources.json','scripts/update_live_data.py']:
+          for required in ['README.md','LICENSE','SECURITY.md','CONTRIBUTING.md','robots.txt','sitemap.xml','manifest.webmanifest','assets/styles.css','assets/app.js','assets/banner.svg','data/deals.json','data/providers.json','data/live-sources.json','scripts/update_live_data.py','providers.html','switching.html','automation-roadmap.html']:
               if not Path(required).exists(): errors.append(f'missing {required}')
 
           import json
           deals=json.loads(Path('data/deals.json').read_text())['deals']
           providers=json.loads(Path('data/providers.json').read_text())['providers']
           if len(deals) < 10: errors.append('expected at least 10 deals')
-          if len(providers) < 15: errors.append('expected at least 15 providers')
+          if len(providers) < 60: errors.append('expected at least 60 provider/source records')
           for deal in deals:
               for field in ['id','provider','network','priceMonthly','dataAllowance','term','sourceUrl','lastReviewedAt']:
                   if field not in deal: errors.append(f'deal {deal.get("id")} missing {field}')
