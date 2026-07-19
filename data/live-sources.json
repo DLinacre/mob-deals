@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-18T16:08:16+00:00",
+  "generatedAt": "2026-07-19T08:33:17+00:00",
   "status": "public-source-reachability-check",
   "disclaimer": "Automated source checks show whether public provider pages were reachable and expose raw price-like tokens. They do not verify final checkout prices. Human review is required before publishing deal prices.",
   "sourceCount": 64,
-  "reachableCount": 49,
+  "reachableCount": 46,
   "sources": [
     {
       "id": "ee",
@@ -100,30 +100,13 @@
       "network": "Vodafone",
       "category": "uk-mvno",
       "sourceUrl": "https://www.voxi.co.uk/sim-only-plans",
-      "status": 200,
-      "ok": true,
+      "status": 403,
+      "ok": false,
       "finalUrl": "https://www.voxi.co.uk/sim-only-plans",
-      "contentType": "text/html; charset=utf-8",
-      "bytesSampled": 180000,
-      "observedPriceTokens": [
-        "£10",
-        "£1015.20",
-        "£1054.80",
-        "£108",
-        "£11",
-        "£12",
-        "£1206",
-        "£1285.20",
-        "£1292.40",
-        "£1422",
-        "£147.60",
-        "£15",
-        "£154.80",
-        "£20",
-        "£226.80",
-        "£259.20"
-      ],
-      "error": null
+      "contentType": "text/html; charset=UTF-8",
+      "bytesSampled": 0,
+      "observedPriceTokens": [],
+      "error": "HTTP 403"
     },
     {
       "id": "giffgaff",
@@ -230,16 +213,13 @@
       "network": "Vodafone",
       "category": "uk-mvno",
       "sourceUrl": "https://mobile.lebara.com/gb/en/best-sim-only-deals/c/simo-contract",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://www.lebara.co.uk/en/best-sim-only-deals.html",
-      "contentType": "text/html;charset=utf-8",
-      "bytesSampled": 108603,
-      "observedPriceTokens": [
-        "£3",
-        "£5"
-      ],
-      "error": null
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://mobile.lebara.com/gb/en/best-sim-only-deals/c/simo-contract",
+      "contentType": "text/html; charset=UTF-8",
+      "bytesSampled": 0,
+      "observedPriceTokens": [],
+      "error": "HTTP 403"
     },
     {
       "id": "lyca-mobile",
@@ -525,7 +505,7 @@
       "ok": true,
       "finalUrl": "https://ee.co.uk/mobile/pay-monthly-phones-gallery/best-of-both",
       "contentType": "text/html; charset=utf-8",
-      "bytesSampled": 94918,
+      "bytesSampled": 94953,
       "observedPriceTokens": [
         "£129"
       ],
@@ -603,13 +583,13 @@
       "network": "Multi-network",
       "category": "retailer-comparison",
       "sourceUrl": "https://www.affordablemobiles.co.uk/sim-only-deals",
-      "status": 404,
+      "status": 403,
       "ok": false,
       "finalUrl": "https://www.affordablemobiles.co.uk/sim-only-deals",
       "contentType": "text/html; charset=UTF-8",
       "bytesSampled": 0,
       "observedPriceTokens": [],
-      "error": "HTTP 404"
+      "error": "HTTP 403"
     },
     {
       "id": "e2save",
@@ -631,13 +611,13 @@
       "network": "Multi-network",
       "category": "retailer-comparison",
       "sourceUrl": "https://www.metrofone.co.uk/sim-only-deals",
-      "status": 404,
+      "status": 403,
       "ok": false,
       "finalUrl": "https://www.metrofone.co.uk/sim-only-deals",
       "contentType": "text/html; charset=UTF-8",
       "bytesSampled": 0,
       "observedPriceTokens": [],
-      "error": "HTTP 404"
+      "error": "HTTP 403"
     },
     {
       "id": "carphone-warehouse",
@@ -1002,13 +982,13 @@
       "network": "Multi-network",
       "category": "travel-esim",
       "sourceUrl": "https://maya.net/esim/uk",
-      "status": 200,
-      "ok": true,
+      "status": 403,
+      "ok": false,
       "finalUrl": "https://maya.net/esim/uk",
-      "contentType": "text/html; charset=utf-8",
-      "bytesSampled": 180000,
+      "contentType": "text/html; charset=UTF-8",
+      "bytesSampled": 0,
       "observedPriceTokens": [],
-      "error": null
+      "error": "HTTP 403"
     },
     {
       "id": "roamless",
