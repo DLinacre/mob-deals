@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-20T09:33:59+00:00",
+  "generatedAt": "2026-07-21T08:44:52+00:00",
   "status": "public-source-reachability-check",
   "disclaimer": "Automated source checks show whether public provider pages were reachable and expose raw price-like tokens. They do not verify final checkout prices. Human review is required before publishing deal prices.",
   "sourceCount": 64,
-  "reachableCount": 43,
+  "reachableCount": 46,
   "sources": [
     {
       "id": "ee",
@@ -140,13 +140,15 @@
       "network": "O2",
       "category": "uk-mvno",
       "sourceUrl": "https://www.tescomobile.com/shop/sim-only",
-      "status": 503,
-      "ok": false,
-      "finalUrl": "https://www.tescomobile.com/shop/sim-only",
-      "contentType": "text/html; charset=utf-8",
-      "bytesSampled": 0,
-      "observedPriceTokens": [],
-      "error": "HTTP 503"
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://www.tescomobile.com/shop/sim-only-deals/sim-only-contracts",
+      "contentType": "text/html; charset=UTF-8",
+      "bytesSampled": 180000,
+      "observedPriceTokens": [
+        "£50"
+      ],
+      "error": null
     },
     {
       "id": "sky-mobile",
@@ -504,7 +506,7 @@
       "ok": true,
       "finalUrl": "https://ee.co.uk/mobile/pay-monthly-phones-gallery/best-of-both",
       "contentType": "text/html; charset=utf-8",
-      "bytesSampled": 94916,
+      "bytesSampled": 94885,
       "observedPriceTokens": [
         "£129"
       ],
@@ -551,13 +553,30 @@
       "network": "Multi-network",
       "category": "retailer-comparison",
       "sourceUrl": "https://www.fonehouse.co.uk/sim-only-deals",
-      "status": null,
-      "ok": false,
+      "status": 200,
+      "ok": true,
       "finalUrl": "https://www.fonehouse.co.uk/sim-only-deals",
-      "contentType": "",
-      "bytesSampled": 0,
-      "observedPriceTokens": [],
-      "error": "TimeoutError"
+      "contentType": "text/html; charset=UTF-8",
+      "bytesSampled": 180000,
+      "observedPriceTokens": [
+        "£0",
+        "£10.00",
+        "£11.00",
+        "£11.80",
+        "£13.50",
+        "£15",
+        "£16.00",
+        "£201.20",
+        "£249.00",
+        "£25",
+        "£5",
+        "£50",
+        "£6.00",
+        "£6.95",
+        "£60",
+        "£8.00"
+      ],
+      "error": null
     },
     {
       "id": "affordable-mobiles",
@@ -715,7 +734,7 @@
       "ok": true,
       "finalUrl": "https://www.bonline.com/business-voip/mobile-business-phone-app-chatgpt/",
       "contentType": "text/html; charset=UTF-8",
-      "bytesSampled": 148809,
+      "bytesSampled": 148810,
       "observedPriceTokens": [
         "£1",
         "£13.95",
@@ -735,12 +754,12 @@
       "contentType": "text/html; charset=utf-8",
       "bytesSampled": 180000,
       "observedPriceTokens": [
-        "£13.20",
         "£15.95",
         "£16.00",
         "£18.00",
         "£19.99",
         "£21.00",
+        "£23.80",
         "£24.00",
         "£26.25",
         "£32.50",
@@ -1006,13 +1025,16 @@
       "network": "O2",
       "category": "legacy-check",
       "sourceUrl": "https://www.virginmedia.com/mobile",
-      "status": 403,
-      "ok": false,
+      "status": 200,
+      "ok": true,
       "finalUrl": "https://www.virginmedia.com/mobile",
-      "contentType": "text/html; charset=UTF-8",
-      "bytesSampled": 0,
-      "observedPriceTokens": [],
-      "error": "HTTP 403"
+      "contentType": "text/html; charset=utf-8",
+      "bytesSampled": 180000,
+      "observedPriceTokens": [
+        "£125",
+        "£50"
+      ],
+      "error": null
     },
     {
       "id": "plusnet-mobile-legacy",
