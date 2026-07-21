@@ -1,3 +1,5 @@
+![mob-deals Banner](assets/banner.png)
+
 <p align="center"><img src="assets/banner.svg" alt="Mob Deals — South Yorkshire SIM-only comparison" width="100%"></p>
 
 # Mob Deals
