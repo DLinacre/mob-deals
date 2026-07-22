@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T08:44:52+00:00",
+  "generatedAt": "2026-07-22T08:44:37+00:00",
   "status": "public-source-reachability-check",
   "disclaimer": "Automated source checks show whether public provider pages were reachable and expose raw price-like tokens. They do not verify final checkout prices. Human review is required before publishing deal prices.",
   "sourceCount": 64,
@@ -238,6 +238,8 @@
         "£10",
         "£2.50",
         "£2.55",
+        "£3",
+        "£3.50",
         "£5"
       ],
       "error": null
@@ -506,7 +508,7 @@
       "ok": true,
       "finalUrl": "https://ee.co.uk/mobile/pay-monthly-phones-gallery/best-of-both",
       "contentType": "text/html; charset=utf-8",
-      "bytesSampled": 94885,
+      "bytesSampled": 94886,
       "observedPriceTokens": [
         "£129"
       ],
