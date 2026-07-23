@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T08:44:37+00:00",
+  "generatedAt": "2026-07-23T08:44:49+00:00",
   "status": "public-source-reachability-check",
   "disclaimer": "Automated source checks show whether public provider pages were reachable and expose raw price-like tokens. They do not verify final checkout prices. Human review is required before publishing deal prices.",
   "sourceCount": 64,
@@ -162,22 +162,19 @@
       "contentType": "text/html; charset=utf-8",
       "bytesSampled": 180000,
       "observedPriceTokens": [
-        "£10",
+        "£1",
         "£100",
-        "£108",
-        "£12",
         "£14",
-        "£18",
-        "£19",
         "£2",
-        "£20",
+        "£21",
         "£23",
-        "£30",
-        "£37",
+        "£28",
+        "£3",
+        "£349",
+        "£379",
+        "£38",
         "£45",
-        "£538",
-        "£7",
-        "£72"
+        "£946"
       ],
       "error": null
     },
@@ -341,13 +338,14 @@
       "contentType": "text/html; charset=utf-8",
       "bytesSampled": 180000,
       "observedPriceTokens": [
+        "£10",
         "£12",
         "£15",
-        "£18",
         "£2",
         "£20",
-        "£3",
-        "£5"
+        "£25",
+        "£5",
+        "£8"
       ],
       "error": null
     },
@@ -508,7 +506,7 @@
       "ok": true,
       "finalUrl": "https://ee.co.uk/mobile/pay-monthly-phones-gallery/best-of-both",
       "contentType": "text/html; charset=utf-8",
-      "bytesSampled": 94886,
+      "bytesSampled": 94762,
       "observedPriceTokens": [
         "£129"
       ],
@@ -736,7 +734,7 @@
       "ok": true,
       "finalUrl": "https://www.bonline.com/business-voip/mobile-business-phone-app-chatgpt/",
       "contentType": "text/html; charset=UTF-8",
-      "bytesSampled": 148810,
+      "bytesSampled": 148807,
       "observedPriceTokens": [
         "£1",
         "£13.95",
